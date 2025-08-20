@@ -1,0 +1,16 @@
+# Temporary and binary files
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+
+# Env files
+.env
+
+# Venvs
+.venv
+
+# VS Code settings
+.vscode
+
+# Run outputs
+*.png
