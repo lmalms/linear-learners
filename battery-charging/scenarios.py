@@ -1,6 +1,7 @@
 import numpy as np
-from models import BoundaryConditions, Forecasts, InitialConditions, SimulationScenario
 from numpy.typing import NDArray
+
+from models import BoundaryConditions, Forecasts, InitialConditions, SimulationScenario
 
 horizon, period = 120, 24
 rng = np.random.default_rng(42)

@@ -10,7 +10,6 @@ repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.12.10
     hooks:
-      # Run the linter.
       - id: ruff-check
         args:
           [
@@ -23,6 +22,5 @@ repos:
             --select=I,
             --exclude=*.ipynb,
           ]
-      # Run the formatter.
       - id: ruff-format
-        args: [--line-length=88, --indent-width=4]
+        args: [--line-length=88]

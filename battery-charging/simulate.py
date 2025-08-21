@@ -27,7 +27,6 @@ def compute_cost_of_charge(state: State, action: Action) -> float:
 
 
 def simulate_greedy(scenario: SimulationScenario) -> SimulationResults:
-
     initial_soc = scenario.initial_conditions.state_of_charge
     grid_flow_history: list[float] = [0.0]
     state_of_charge_history: list[float] = [initial_soc]
@@ -64,7 +63,6 @@ def simulate_mpc(
     scenario: SimulationScenario,
     parameters: MpcSimulationParameters,
 ) -> SimulationResults:
-
     n_timesteps = scenario.timesteps
     horizon = parameters.horizon
     assert n_timesteps + horizon <= len(scenario.forecasts.demand)

@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import pulp as plp
+
 from models import Action, State
 
 
@@ -11,7 +12,6 @@ class MpcSimulationParameters:
 
 
 def mpc(state: State, parameters: MpcSimulationParameters) -> Action:
-
     demand_forecasts = state.forecasts.demand
     price_forecasts = state.forecasts.price
     capacity = state.boundary_conditions.capacity

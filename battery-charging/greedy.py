@@ -1,9 +1,9 @@
 import pulp as plp
+
 from models import Action, State
 
 
 def greedy(state: State) -> Action:
-
     price = state.forecasts.price[0]
     demand = state.forecasts.demand[0]
     state_of_charge = state.state_of_charge
